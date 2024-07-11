@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 import { connectDB } from "./config/database.js";
 import { respond } from "./utils/response.js";
 import cookieParser from "cookie-parser";
-
+import userRouter from "./routes/User.js"
 // import cors from "cors"
 
 const app = express();
@@ -24,6 +24,7 @@ app.use(cookieParser());
 //     })
 // )
 
+app.use("/api/v1/auth",userRouter)
 
 app.get("/" , (req,res) => {
     return respond(res,"Your Server is up and running",200,true)
