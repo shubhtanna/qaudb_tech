@@ -4,7 +4,7 @@ import { connectDB } from "./config/database.js";
 import { respond } from "./utils/response.js";
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/User.js"
-// import cors from "cors"
+import cors from "cors"
 
 const app = express();
 
@@ -17,12 +17,12 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 
-// app.use(
-//     cors({
-//         origin:"http://localhost:3000",
-//         credentials:true,
-//     })
-// )
+app.use(
+    cors({
+        origin:"http://localhost:3000",
+        credentials:true,
+    })
+)
 
 app.use("/api/v1/auth",userRouter)
 
