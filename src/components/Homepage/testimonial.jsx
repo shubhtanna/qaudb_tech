@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -55,7 +54,7 @@ const TestimonialSection = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Display 3 testimonials at once
+    slidesToShow: 3, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,

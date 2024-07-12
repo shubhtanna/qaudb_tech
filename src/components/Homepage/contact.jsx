@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -17,9 +16,9 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here (e.g., sending the form data to the server)
+    
     console.log(formData);
-    // Reset form fields after submission
+   
     setFormData({
       name: "",
       email: "",

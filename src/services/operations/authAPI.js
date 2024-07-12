@@ -15,11 +15,7 @@ export function signup(
     return async(dispatch) => {
         const toastId = toast.loading("Loading...")
         dispatch(setLoading(true))
-        // console.log("data",name,email,password,about)
-        // try{
-        //     const response = await apiConnector("POST",SIGNUP_API,{
-        //         name,email,password,about
-        //     })
+    
         const { name, email, password, about } = formData;
 
     try {
@@ -71,12 +67,11 @@ export function login(email,password,navigate) {
 
             localStorage.setItem("token",JSON.stringify(response.data.token))
             localStorage.setItem("user", JSON.stringify(response.data.user))
-            navigate("/dashboard/my-profile")
+            navigate("/")
         }
         catch(error) {
             console.log("LOGIN API ERROR............", error)
             toast.error("Login Failed")
-            navigate("/login")  
         }
         dispatch(setLoading(false))
         toast.dismiss(toastId)

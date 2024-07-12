@@ -49,7 +49,7 @@ const Login = () => {
               className="w-full p-3 rounded-2xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800 focus:text-white text-opacity-1 text-white"
             />
           </div>
-          {/* password */}
+          
           <div className="mt-3">
             <label
               className="block text-sm font-medium mb-2 ps-2"
@@ -73,7 +73,6 @@ const Login = () => {
               Login
             </button>
           </div>
-          {/* {JSON.stringify(loginData)} */}
         </form>
       </div>
     </div>

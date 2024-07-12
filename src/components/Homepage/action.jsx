@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import imageBanner from "../../assets/signup.svg";
 const ActionSection = () => {
@@ -15,7 +14,7 @@ const ActionSection = () => {
         <button
           className="bg-white text-blue-500 py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300"
           onClick={() => {
-            // Add your action button click event handler logic here
+            
             console.log("Get Started button clicked!");
           }}
         >
@@ -24,7 +23,7 @@ const ActionSection = () => {
       </div>
       <div className="absolute top-0 left-0 w-full h-full z-0 opacity-30">
         <img
-          src={imageBanner} // Replace with the actual path to your image
+          src={imageBanner} 
           alt="Action Background"
           className="object-cover w-full h-full"
         />

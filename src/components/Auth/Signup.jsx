@@ -59,7 +59,7 @@ const Signup = () => {
           <h1 className="text-3xl text-center">Signup Here </h1>
           <form onSubmit={handleOnSubmit} className="mt-5">
             {" "}
-            {/* name */}
+          
             <div className="mt-3">
               <label
                 className="block text-sm font-medium mb-2 ps-2"
@@ -76,7 +76,7 @@ const Signup = () => {
                 className="w-full p-3 rounded-2xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800 focus:text-white text-opacity-1 text-white"
               />
             </div>
-            {/* email */}
+          
             <div className="mt-3">
               <label
                 className="block text-sm font-medium mb-2 ps-2"
@@ -93,7 +93,7 @@ const Signup = () => {
                 className="w-full p-3 rounded-2xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800 focus:text-white text-opacity-1 text-white"
               />
             </div>
-            {/* password */}
+            
             <div className="mt-3">
               <label
                 className="block text-sm font-medium mb-2 ps-2"
@@ -110,7 +110,7 @@ const Signup = () => {
                 placeholder='Enter Password'
               />
             </div>
-            {/* about section */}
+            
             <div className="mt-3">
               <label
                 className="block text-sm font-medium mb-2 ps-2"
@@ -135,7 +135,7 @@ const Signup = () => {
                 Signup
               </button>
             </div>
-            {/* {JSON.stringify(data)} */}
+            
           </form>
         </div>
       </div>

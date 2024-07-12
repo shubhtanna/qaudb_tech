@@ -3,7 +3,7 @@ import ContactForm from "../components/Homepage/contact"
 import FeatureSection from "../components/Homepage/section";
 import BannerSection from "../components/Homepage/bannaer";
 import TestimonialSection from "../components/Homepage/testimonial"
-// import Image from "next/image";
+
 
 export const metadata = {
   title: "Home : Work Manager",
@@ -12,7 +12,6 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      {/* banner section  */}
       <BannerSection />
       <FeatureSection />
       <ActionSection />

@@ -1,4 +1,3 @@
-
 import React,{useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../services/operations/authAPI";
@@ -7,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
 
-  // const { token } = useSelector((state) => state.auth);
   const { user } = useSelector((state) => state.profile);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -19,7 +17,7 @@ const CustomNavbar = () => {
     <nav className="bg-blue-600 h-16 py-2 px-36 flex justify-between items-center">
       <div className="brand">
         <h1 className="text-2xl font-semibold">
-          <a href="/">Work Manager</a>
+          <a href="/">Task Manager</a>
         </h1>
       </div>
       <div>
@@ -32,12 +30,12 @@ const CustomNavbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/login"} className="hover:text-blue-200">
+                <Link to={"/addTask"} className="hover:text-blue-200">
                   Add Task
                 </Link>
               </li>
               <li>
-                <Link to={"/login"} className="hover:text-blue-200">
+                <Link to={"/showTask"} className="hover:text-blue-200">
                   Show Tasks
                 </Link>
               </li>
@@ -50,7 +48,7 @@ const CustomNavbar = () => {
           {user && (
             <>
               <li>
-                <Link to={"/login"}>{user.name}</Link>
+                <Link >{user.name}</Link>
               </li>
               <li>
                 <button onClick={() => dispatch(logout(navigate))}>Logout</button>

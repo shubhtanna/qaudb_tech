@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import bannerImage from "../../assets/login.svg";
 
@@ -8,7 +7,7 @@ const BannerSection = () => {
       <div className="container mx-auto flex items-center justify-around py-5">
         <div className="mr-4">
           <img
-            src={bannerImage} // Replace with the actual path to your image
+            src={bannerImage} 
             alt="Banner"
             className=" w-80 rounded-full "
           />
@@ -23,7 +22,7 @@ const BannerSection = () => {
           <button
             className="bg-white text-blue-500 px-4 py-2 mt-4 rounded-md shadow-md hover:shadow-lg transition duration-300"
             onClick={() => {
-              // Add your action button click event handler logic here
+              
               console.log("Action button clicked!");
             }}
           >

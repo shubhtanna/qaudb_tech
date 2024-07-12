@@ -4,6 +4,7 @@ import { connectDB } from "./config/database.js";
 import { respond } from "./utils/response.js";
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/User.js"
+import taskRouter from "./routes/Task.js"
 import cors from "cors"
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(
 )
 
 app.use("/api/v1/auth",userRouter)
+app.use("/api/v1/task",taskRouter)
 
 app.get("/" , (req,res) => {
     return respond(res,"Your Server is up and running",200,true)
